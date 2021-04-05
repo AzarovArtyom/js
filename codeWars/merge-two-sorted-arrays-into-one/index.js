@@ -1,13 +1,13 @@
 function mergeArrays(arr1, arr2) {
-  let arrAll = [];
-  for (let num in arr1) {
+  const arrAll = [];
+  for (const num in arr1) {
     arrAll.push(arr1[num]);
   }
-  for (let num in arr2) {
+  for (const num in arr2) {
     arrAll.push(arr2[num]);
   }
-  let arrFinal = [];
-  for (let num in arrAll) {
+  const arrFinal = [];
+  for (const num in arrAll) {
     if (!arrFinal.includes(arrAll[num])) {
       arrFinal.push(arrAll[num]);
     }

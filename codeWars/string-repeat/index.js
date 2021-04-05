@@ -1,5 +1,5 @@
 function repeatStr(n, s) {
-  let str = "";
+  let str = '';
   for (let i = 0; i < n; i++) {
     str += s;
   }

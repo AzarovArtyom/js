@@ -1,5 +1,5 @@
-let Ball = function (ballType) {
+const Ball = function (ballType) {
   if (!ballType) {
-    this.ballType = "regular";
+    this.ballType = 'regular';
   } else this.ballType = ballType;
 };

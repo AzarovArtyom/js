@@ -1,8 +1,8 @@
 function findLongest(str) {
-  let spl = str.split(" ");
+  const spl = str.split(' ');
   let longest = 0;
 
-  for (let word in spl) {
+  for (const word in spl) {
     if (spl[word].length > longest) {
       longest = spl[word].length;
     }
