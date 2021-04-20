@@ -15,3 +15,5 @@ function mergeArrays(arr1, arr2) {
   arrFinal.sort((a, b) => a - b);
   return arrFinal;
 }
+
+mergeArrays();

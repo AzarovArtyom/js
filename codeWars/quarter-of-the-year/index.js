@@ -1,3 +1,4 @@
+// eslint-disable-next-line consistent-return
 const quarterOf = (month) => {
   if (month / 3 <= 1) {
     return 1;

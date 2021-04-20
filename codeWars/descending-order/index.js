@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 function descendingOrder(n) {
   const str = String(n);
   const arr = str.split('').sort((a, b) => b - a);
@@ -8,3 +9,5 @@ function descendingOrder(n) {
   str2 = Number(str2);
   return str2;
 }
+
+console.log(descendingOrder(1234123124));

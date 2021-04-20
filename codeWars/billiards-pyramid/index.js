@@ -5,6 +5,7 @@ function pyramid(balls) {
   while (res < balls) {
     res += num;
     prev = num;
+    // eslint-disable-next-line no-plusplus
     num++;
   }
   if (res > balls) {
@@ -12,3 +13,6 @@ function pyramid(balls) {
   }
   return prev;
 }
+
+// eslint-disable-next-line no-console
+console.log(pyramid(15));

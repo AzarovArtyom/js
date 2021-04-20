@@ -10,3 +10,6 @@ function findDifference(a, b) {
   // }
   return Math.abs(volume1 - volume2);
 }
+
+// eslint-disable-next-line no-console
+console.log(findDifference([3, 2, 5], [1, 4, 4]));

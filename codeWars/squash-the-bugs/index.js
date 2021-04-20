@@ -9,3 +9,5 @@ function findLongest(str) {
   }
   return longest;
 }
+
+findLongest();

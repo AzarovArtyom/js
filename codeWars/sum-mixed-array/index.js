@@ -3,3 +3,5 @@ function sumMix(x) {
   const arr = str.split(',');
   return arr.reduce((prev, current) => +prev + +current, 0);
 }
+
+sumMix();

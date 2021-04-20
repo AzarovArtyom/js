@@ -29,4 +29,5 @@ const array1 = [
   true,
 ];
 
+// eslint-disable-next-line no-console
 console.log(countSheeps(array1));

@@ -1,18 +1,23 @@
 function twiceAsOld(dadYearsOld, sonYearsOld) {
-  const dadYears1 = dadYearsOld;
-  let dadYears2 = 0;
-  if (dadYears1 / sonYearsOld > 2) {
-    while (dadYearsOld / sonYearsOld > 2) {
-      dadYearsOld++;
-      sonYearsOld++;
+  const dadYearsCur = dadYearsOld;
+  let dadYearsCul = dadYearsOld;
+  let sonYearsCul = sonYearsOld;
+  let dadYearsRes = 0;
+  if (dadYearsCur / sonYearsCul > 2) {
+    while (dadYearsCul / sonYearsCul > 2) {
+      dadYearsCul += 1;
+      sonYearsCul += 1;
     }
-    dadYears2 = dadYearsOld - dadYears1;
-    return `Через ${dadYears2} лет`;
+    dadYearsRes = dadYearsCul - dadYearsCur;
+    return `Через ${dadYearsRes} лет`;
   }
-  while (dadYearsOld / sonYearsOld < 2) {
-    dadYearsOld--;
-    sonYearsOld--;
+  while (dadYearsCul / sonYearsCul < 2) {
+    dadYearsCul -= 1;
+    sonYearsCul -= 1;
   }
-  dadYears2 = dadYears1 - dadYearsOld;
-  return `${dadYears2} лет назад`;
+  dadYearsRes = dadYearsCur - dadYearsCul;
+  return `${dadYearsRes} лет назад`;
 }
+
+console.log(twiceAsOld(30, 16));
+module.exports = { twiceAsOld };
