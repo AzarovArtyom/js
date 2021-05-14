@@ -8,4 +8,4 @@ const factorial = (n) => {
   return res;
 };
 
-console.log(factorial(4));
+module.exports = { factorial };

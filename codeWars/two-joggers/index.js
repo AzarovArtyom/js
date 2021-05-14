@@ -20,4 +20,6 @@ const nbrOfLaps = (x, y) => {
   return res;
 };
 
-console.log(nbrOfLaps(4, 6));
+module.exports = { nbrOfLaps };
+
+/* console.log(nbrOfLaps(4, 6)); */

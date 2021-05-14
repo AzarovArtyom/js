@@ -1,3 +1,5 @@
 const mouthSize = (animal) => (animal.toLowerCase() === 'alligator' ? 'small' : 'wide');
 
-console.log(mouthSize('AlligaTor'));
+module.exports = { mouthSize };
+
+/* console.log(mouthSize('AlligaTor')); */

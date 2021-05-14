@@ -14,6 +14,7 @@ const quarterOf = (month) => {
   }
 };
 
+module.exports = { quarterOf };
 // better user Math.ceil()
 
-console.log(quarterOf(2));
+/* console.log(quarterOf(2)); */

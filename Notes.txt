@@ -1,2 +1,7 @@
-Two Joggers
+Two Joggers - ??
 Arabian Strings
+human-readable-time - как заменить if
+quarter-of-the-year - как заменить if
+twice-as-old - ??
+stop-gninnips-my-sdrow - как сделать без форич
+repeatStr - можно ли другим способом

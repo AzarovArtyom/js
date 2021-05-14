@@ -1,4 +1,7 @@
-const factorial = require('./index');
+const { factorial } = require('./index');
 
-it('', () => {
+describe('Basic tests', () => {
+  it('Should be', () => {
+    expect(factorial(4)).toBe(24);
+  });
 });

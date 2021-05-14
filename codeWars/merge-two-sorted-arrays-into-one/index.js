@@ -1,19 +1,20 @@
-function mergeArrays(arr1, arr2) {
-  const arrAll = [];
-  for (const num in arr1) {
-    arrAll.push(arr1[num]);
-  }
-  for (const num in arr2) {
-    arrAll.push(arr2[num]);
-  }
-  const arrFinal = [];
-  for (const num in arrAll) {
-    if (!arrFinal.includes(arrAll[num])) {
-      arrFinal.push(arrAll[num]);
-    }
-  }
-  arrFinal.sort((a, b) => a - b);
-  return arrFinal;
-}
+const mergeArrays = (arr1, arr2) => {
+  const arrUnited = [...arr1, ...arr2].sort((a, b) => a - b);
+  return arrUnited.filter((item, index) => arrUnited.indexOf(item) === index);
+};
 
-mergeArrays();
+module.exports = { mergeArrays };
+/* function mergeArrays(arr1, arr2) {
+  const arrFinal = [...arr1, ...arr2].sort((a, b) => a - b);
+  return Array.from(new Set(arrFinal));
+} */
+
+/*
+const _ = require('lodash');
+
+function mergeArrays(arr1, arr2) {
+  return _.sortBy(_.union(arr1, arr2));
+}
+*/
+
+/* console.log(mergeArrays([1, 3, 5, 7, 9, 11, 12], [1, 2, 3, 4, 5, 10, 12])); */

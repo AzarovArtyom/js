@@ -1,10 +1,12 @@
-const mygcd = (x, y) => {
+const mygcd = (x, y) => (!y ? x : mygcd(y, x % y));
+
+module.exports = { mygcd };
+
+/* const mygcd = (x, y) => {
   if (y > x) return mygcd(y, x);
   if (!y) return x;
   return mygcd(y, x % y);
-};
-
-const mygcd2 = (x, y) => (!y ? x : mygcd2(y, x % y));
+}; */
 
 /* const mygcd = (x, y) => {
     let res = 0;
@@ -19,4 +21,4 @@ const mygcd2 = (x, y) => (!y ? x : mygcd2(y, x % y));
     return res
 } */
 
-console.log(mygcd2(10, 25));
+/* console.log(mygcd(10, 25)); */

@@ -1,7 +1,8 @@
 function sumMix(x) {
   const str = String(x);
-  const arr = str.split(',');
-  return arr.reduce((prev, current) => +prev + +current, 0);
+  return str.split(',').reduce((prev, current) => +prev + +current, 0);
 }
 
-sumMix();
+module.exports = { sumMix };
+
+/* console.log(sumMix([9, 3, '7', '3'])); */

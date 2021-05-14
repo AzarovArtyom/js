@@ -1,6 +1,4 @@
-const replaceDots = function (str) {
-  // return str.replace(/\./g, '-');
-  return str.split('.').join('-');
-};
+const replaceDots = (str) => str.split('.').join('-');
+// return str.replace(/\./g, '-');
 
-console.log(replaceDots('one.two.three'));
+module.exports = { replaceDots };

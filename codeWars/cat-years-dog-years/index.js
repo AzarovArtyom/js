@@ -15,4 +15,5 @@ const humanYearsCatYearsDogYears = (humanYears) => {
   yearsArr.push(humanYears, catYears, dogYears);
   return yearsArr;
 };
-console.log(humanYearsCatYearsDogYears(10));
+
+module.exports = { humanYearsCatYearsDogYears };

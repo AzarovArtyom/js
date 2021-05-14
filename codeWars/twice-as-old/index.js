@@ -19,5 +19,5 @@ function twiceAsOld(dadYearsOld, sonYearsOld) {
   return `${dadYearsRes} лет назад`;
 }
 
-console.log(twiceAsOld(30, 16));
+/* console.log(twiceAsOld(30, 16)); */
 module.exports = { twiceAsOld };

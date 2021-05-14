@@ -1,4 +1,6 @@
+/*
 const  = require('./index');
 
 it('', () => {
 });
+*/

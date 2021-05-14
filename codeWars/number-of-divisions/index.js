@@ -10,7 +10,11 @@ const divisions = (n, divisor) => {
   return res;
 };
 
-console.log(divisions(6, 2));
+module.exports = { divisions };
+
+/* const divisions = (n, divisor) => (n >= divisor ? divisions(n, n / divisor) : n); */
+
+/* console.log(divisions(6, 2)); */
 
 /*
 const divisions = (n, divisor) => {

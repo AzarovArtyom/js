@@ -5,14 +5,11 @@ function pyramid(balls) {
   while (res < balls) {
     res += num;
     prev = num;
-    // eslint-disable-next-line no-plusplus
-    num++;
+    num += 1;
   }
-  if (res > balls) {
-    return prev - 1;
-  }
-  return prev;
+  return res > balls ? prev - 1 : prev;
 }
 
+module.exports = { pyramid };
 // eslint-disable-next-line no-console
 console.log(pyramid(15));
